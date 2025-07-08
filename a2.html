@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>My Accessible Photo Gallery</h1>
+
+  <div class="gallery" role="list">
+    <button class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/photo1.jpg" alt="Mountain landscape at sunrise" />
+    </button>
+    <button class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/photo2.jpg" alt="Forest path in autumn" />
+    </button>
+    <button class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/photo3.jpg" alt="City skyline at night" />
+    </button>
+    <!-- Add more images -->
+  </div>
+
+  <div id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button id="closeBtn" aria-label="Close image viewer">×</button>
+    <img id="modalImage" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
